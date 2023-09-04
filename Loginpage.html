@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe&family=Lato:wght@300;400&display=swap');
+        *{
+            margin:0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+      .Backgroundimage{
+        height: 100vh;
+        width: 100vw;
+      }
+      .outerbox img{
+        border-radius: 20px;
+      }
+      .Logo img{
+        height: 40px;
+        width: 40px;
+        margin:0 auto;
+        position: relative;
+        left : 35%;
+        
+      }
+      .gmail{
+        border-radius: 25px;
+      }
+      .Logo{
+        padding-top: 20px;
+      }
+      .innerbox{
+            height: 380px;
+            width: 350px;
+            margin: 0 auto;
+          /* margin-right: 50%; */
+          /* border:1px solid red; */
+          position: absolute;
+          top: 10%;
+          transform: translateX(110%);
+          font-family: 'Lato', sans-serif;
+          background-color: #aaaaaa46;
+          border-radius: 15px;
+          /* background: linear-gradient(to left,#fefefd,#ffffff); */
+        backdrop-filter: blur(8px);
+      }
+      .innerbox header h1{
+        padding-top: 15px ;
+        /* font-family: 'Lato', sans-serif; */
+        font-weight: bold;
+        font-size: large;
+        text-align: center;
+        color: aliceblue;
+       
+      }
+      body{
+        position: relative;
+      }
+      .Inputs input{
+        border: 1px solid #868484;
+        border-radius: 10px;
+        display : block;
+        height: 35px;
+        width: 250px;
+        margin : 0 auto;
+        margin-top: 15px;
+      }
+      .Email,.password{
+        padding: 10px;
+        color:#050000;
+        background-color: #aaaaaa00;
+        /* background: linear-gradient(to left,#ffffaa,#ffffff); */
+        backdrop-filter: blur(18px);
+      }
+      .Email:focus , .password:focus{
+        background-color: #ffffff;
+      }
+      #Signinbutton{
+        /* padding: 15px; */
+        background-color: #0e0a4b;
+        border: none;
+        color: #ffffff;
+        width:200px;
+      }
+      #Signinbutton:hover{
+        background-color: #12a3dc;
+        cursor: grab;
+      }
+      #line{
+        border-top: 2px solid white;
+        /* padding: 0 10px;*/
+        width: 70%;
+        margin: 0 auto;
+         
+      }
+      .Inputs p{
+        color: #ffffff;
+        font-size: small;
+        text-align: center;
+        padding: 15px;
+      }
+      .Forgotten{
+        color: #ffffff;
+        font-size: 14px;
+        text-align: center;
+        padding: 15px;
+      }
+      .Forgotten a{
+        color: #0e0a4b;
+      }
+      img.facebook{
+        height: 45px;
+        width: 65px;
+        margin:0 auto;
+        position: relative;
+        left : 27%;
+      }
+
+    </style>
+</head>
+<body>
+   <div class="outerbox">
+    <img class="Backgroundimage"src="marek-piwnicki-MSoJwmGW5_o-unsplash.jpg" alt="Mountains">
+   </div> 
+    <div class="innerbox">
+        <header>
+            <h1>Welcome</h1>
+        </header>
+        <main>
+            <form class = "Inputs">
+                <input type="email" placeholder="Email" class="Email">
+                <input type="password" placeholder="password" class="password">
+                <input type="submit" name="Signin" id="Signinbutton" value="Sign in">
+                <p>OR LOGIN WITH</p>
+            </form>
+        </main>
+        <footer>
+            <hr id="line">
+            <div class="Logo">
+                <a href="https://www.facebook.com/">
+                    <img class="facebook "src ="Facebook-logo.png" alt="Facebook-logo">
+                </a>
+                <a href="https://www.gmail.com/">
+                    <img class="gmail" src="images.png" alt="gmail-logo">
+                </a>
+                <!-- <a href="https://www.instagram.com/">
+                    <img class="instagram "src="png-transparent-logo-computer-icons-instagram-logo-instagram-logo-miscellaneous-text-trademark.png" alt="instagram-logo">
+                </a> -->
+            </div>
+            <p class="Forgotten">
+                <a href="#">Forgot password?</a>
+                </p>
+        </footer>
+    </div>
+</body>
+</html>
